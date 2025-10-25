@@ -23,4 +23,9 @@ Data: 24/10/2025
 Dia:  4
 Obs: MEHHHH nao achei nada de mais mid asf
 
+Modulo 9
+Data: 25/10/2025
+Dia:  5
+Obs: Foi bem chill,facil e divertido fiz tudo bue rapido e depois fiquei a dar struggle a pensar como e que printava uma coisa em loop lmao
+
 
