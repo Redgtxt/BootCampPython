@@ -1,21 +1,17 @@
-# Classes sao escritas em Upercase CarClass exemplo
+from question_model import Question
+from data import question_data
+from quiz_brain import QuizBrain
 
-#from turtle import Turtle,Screen
-from prettytable import PrettyTable
+question_bank = []
+for question in question_data:
+    question_text = question["text"]
+    question_answer = question["answer"]
+    new_question = Question(question_text,question_answer)
+    question_bank.append(new_question)
 
+quiz = QuizBrain(question_bank)
+while quiz.still_has_question():
+    quiz.next_question()
 
-#timmy = Turtle();
-
-#print(timmy);
-
-#my_screen = Screen();
-#timmy.color("red");
-#timmy.shape("turtle");
-#timmy.forward(500);
-#timmy.left(120);
-#timmy.forward(500);
-#timmy.left(120);
-#timmy.forward(500);
-
-#my_screen.title("Wow janela com pytohn")
-#my_screen.exitonclick();
+print("You've completed the quiz")
+print(f"Your final score{quiz.score} / {quiz.question_number}")
